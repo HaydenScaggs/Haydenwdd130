@@ -34,7 +34,7 @@ main section {
     text-align: center; 
 }
 body {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 header {
     background-color:rgba(20, 30, 13, .7);
