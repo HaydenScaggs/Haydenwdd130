@@ -2,29 +2,31 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #c9f0ff   ;
-  --secondary-color: #eafffd ;
-  --accent1-color: #efeff0;
-  --accent2-color: #d5cad6;
+  --primary-color: #146C94   ;
+  --secondary-color: #19A7CE ;
+  --accent1-color: #F6F1F1;
+  --accent2-color: #000000;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Noto Serif",Serif;
   --paragraph-font: "PT Seri",Serif;
-/*https://coolors.co/c9f0ff-eafffd-efeff0-d5cad6-6b5e62
+/*https://colorhunt.co/palette/f6f1f119a7ce146c94000000
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #c9f0ff;  /* headlines on a white background */ 
+  --headline-color-on-white: #19A7CE;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #eafffd; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #146C94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #eafffd  ;
-  --nav-link-color: #eafffd;
-  --nav-background-color: #d5cad6;
+  --paragraph-background-color: #146C94  ;
+  --nav-link-color: #146C94;
+  --nav-background-color: #146C94;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #d5cad6;
+  --nav-hover-background-color: #146C94;
 }
 
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   max-width: 1200px;
   margin: 0 auto;
   padding: 4em;
@@ -34,7 +36,6 @@ body {
 img {
   display: block;
   margin: 0 auto;
-
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -51,7 +52,7 @@ hr {
 header {
   padding: 1em;
   text-align: center;
-  color: var(--headline-color-on-color);
+  color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
 }
 header > h1, header > h2 {
@@ -60,7 +61,7 @@ header > h1, header > h2 {
 
 p {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
+  color: var(--paragraph-color);
   padding: 1em;
 }
 .colors {
