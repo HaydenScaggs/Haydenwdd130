@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=PT+Serif:ital@0;1&display=swap');
+/* NAV AND HEADER */
+nav a{
+  text-align:center;
+  color:#ffffff;
+  text-decoration:none;
+  padding: 40px;
+
+}
+nav {
+  display: flex;
+  justify-content: center; 
+}
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+.logo {
+width:80px;
+}
+header {
+  background-color:#146C94;
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+nav a:hover {
+  background-color:#19A7CE;
+  color:#FFF;
+}
+
+/* BODY */
+.title-home {
+  text-align: center;
+  font-family: sans-serif;
+}
+.home-picture {
+  width: 50%;
+  border: 10px solid #ffffff;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  box-sizing: border-box;  
+}
+.title-home {
+  text-align: center;
+}
+.title-home h2 {
+  margin-top: 70px;
+}
+.info{
+  border-radius: 35px;
+  background: #146C94;
+  margin: 25px;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+.home-grid .info h3  {
+  font-size: 16px;
+  padding: 10px;
+}
+.home-grid .info p {
+  font-size: 14px;
+  padding: 10px;
+}
+.home-grid .info li {
+  font-size: 14px;
+  padding: 10px;
+}
+body
+{
+  font-family: "Times New Roman", sans-serif;
+  background: rgb(0, 0, 0);
+  color: black;
+  text-align: center;
+}
+/*Page2*/
+
+
+
+
+
+/* FOOTER */
+footer {
+  background-color:#146C94;
+  color:#ffffff;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a {
+  color:#ffffff;
+  text-decoration:none;
+}
+
+footer p {
+  font-size: 2em;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color:#FFF;
+}
+footer .social img {
+  padding-top: 15px;
+}
