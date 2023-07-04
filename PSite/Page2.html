@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page2</title>
+    <title>Using Frame Data</title>
 </head>
 <body>
     <div id="content">
@@ -14,54 +14,129 @@
             </a>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="Page3.html">Page 3</a>
-                <a href="Page2.html">Page 2</a>
+                <a href="Page3.html">Info Hub</a>
+                <a href="Page2.html">Using Frame Data</a>
             </nav>
         </header>
-        <div class="title-home">
-            <h2>FRAME COUNTER</h2>
-            <p>This site displays frame data Visually display movement in time of an animation.</p>
-        </div><div class="home-grid">
-            <section class="info">
-                <h3>iorem</h3>   
-                <p>This site displays frame data Visually display movement in time of an animation.</p>
-                <ul>
-                    <li>The audience for this website would be for people to see information about key portions of certains frames.</li>
-                    <li>You can view key things like startup, active, and recovery</li>
-                </ul>
-            </section>
-
-
-
-            <section class="info">
-                <h3>CONTENT</h3>   
-                <img src="images/nago-cs-hit.png" alt="NAgo" >
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</li>
-                </ul>
-            </section>
-
-        </div>
-        <footer>
-            <p>FRAMECOUNTER &copy; 2023 - HAYDENSCAGGS</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="contactus.html">Contact Us</a></p>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>
-            </div>
-        </footer>
-    </div> 
         
+        <div class="Frame-Data">
+            <h2>Using Frame Data</h2>
+            <p>How Do I Read It?</p>
+            <button type="button" class="collapsible">Introduction</button>
+            <div class="content">
+              <h3>Frames?</h3>
+            <p>So what is a frame? Television, movies, games, videos and such are all like flip-books, just a series of still-images shown in rapid succession to give the illusion of smooth motion. A frame is one of these still-images. You don't need to know how this magic trick works. For fighting games and understanding frame data, you just need to know that a frame represents the smallest unit of measurable time. Regardless of how much real-world time a frame is representing, 4 frames will always be less time than 5 frames and 2 frames will always be more time than 1 frame. The standard for most fighting games is to run at 60fps, that is to say that 1 frame will last 1/60th of a second.</p>
+            </div>
+        </div>
+        <div class="framedata-grid">
+            <div class="information">
+                <button type="button" class="collapsible">What can frame data tell me?</button>
+                <div class="content">
+                    <h3>What can frame data tell me?</h3>   
+                    <p>Frame data is information on timings. Sometimes there'll be additional information like attack effects and such. The major thing frame data lacks is the positional data. It can tell us when a move will hit, but it can't tell us where the move will hit. We can see if there's enough time to do a move, but you still need to go back to the game to make sure the move is relevant, spacing-wise.</p>
+                </div>
+            </div>
+            <div class="information">
+                <button type="button" class="collapsible">How many frames per second can the human eye see?</button>
+                <div class="content">
+                    <h3>How many frames per second can the human eye see?</h3>   
+                    <p>This question isn't so simple to answer, and perhaps even the question is incorrect. But I can tell you that back when First-Person Shooters and 3D hardware were getting big, I could absolutely see the difference between 15fps, 30fps, 60fps, and 100+fps. As we kept managing higher and higher frame rates, there was never a point where it felt like my eyes/brain were missing frames. Though there was definitely a point where I was missing money.
+                    If you're interested in the topic, there's google.</p>
+                </div>
+            </div>
+            <div class="information">
+              <button type="button" class="collapsible">How Does this Work on the site?</button>
+              <div class="content">
+                  <h3>How Does this Work on the site?</h3>
+                  <img class="Frame" src="images/nago5h-larger.png" alt="Nago-5h">
 
+                  <div class="citizen-table-wrapper citizen-overflow--right"><table class="moveTable">
+              <tbody><tr>
+              <th> Version </th>
+              <th> Damage </th> 
+              <th> How this attack can be blocked.</th>
+              <th> The number of frames between inputting an attack and when the attack becomes active. Includes first active frame.</th>
+              <th> The number of frames for which a move has hitboxes. Occurs after Startup.</th>
+              <th> The number of frames after a move's active frames during which the character cannot act assuming the move is not canceled.</th>
+              <th> The difference between the attacker's recovery and the period that the opponent is in blockstun. This Frame Advantage value is based off the fact that the very first active frame touches the opponent.</th>
+              <th> Invuln</th>
+              </tr>
+              <tr>
+              <th>Level 1 </th>
+              <td> 60 </td>
+              <td> All </td>
+              <td> 20 </td>
+              <td> 6 </td>
+              <td> 27 </td>
+              <td> -14 </td>
+              <td>  </td>
+              </tr>
+              <tr>
+              <th>Level 2 </th>
+              <td> 65 </td>
+              <td> All </td>
+              <td> 18 </td>
+              <td> 6 </td>
+              <td> 27 </td>
+              <td> -14 </td>
+              <td>  </td>
+              </tr>
+              <tr>
+              <th>Level 3 </th>
+              <td> 70 </td>
+              <td> All </td>
+              <td> 16 </td>
+              <td> 6 </td>
+              <td> 27 </td>
+              <td> -14 </td>
+              <td>  </td>
+              </tr>
+              <tr>
+              <th>Blood Rage </th>
+              <td> 91 </td>
+              <td> All </td>
+              <td> 16 </td>
+              <td> 6 </td>
+              <td> 27 </td>
+              <td> -14 </td>
+              <td>  </td>
+              </tr>
+              </tbody></table></div>
+            <div class="frameChart"><div class="frameChart-title"><b>Level 1 <span class="colorful-text-4">5H</span></b></div> <div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-startup"></div><div class="frame-data-active"></div><div class="frame-data-active"></div><div class="frame-data-active"></div><div class="frame-data-active"></div><div class="frame-data-active"></div><div class="frame-data-active"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><div class="frame-data-recovery"></div><span style="font-size: 80%">  <b>Total: </b>52</span></div>
+              </div>
+          </div>
+      </div>
+      <footer>
+          <p>FRAMECOUNTER &copy; 2023 - HAYDENSCAGGS</p>
+          <p><a href="site-plan.html">Site Plan</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
+          <div class="social">
+              <a href="https://facebook.com" target="_blank">
+                  <img src="images/facebook.png" alt="fb icon">
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                  <img src="images/twitter.png" alt="twitter icon">
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                  <img src="images/instagram.png" alt="instagram icon">
+              </a>
+          </div>
+      </footer>
+  </div> 
+  <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                  content.style.display = "none";
+              } else {
+                  content.style.display = "block";
+              }
+          });
+      }
+  </script>
 </body>
 </html>
