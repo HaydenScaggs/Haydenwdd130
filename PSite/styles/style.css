@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=PT+Serif:ital@0;1&display=swap');
 
+
 /* NAV AND HEADER */
 nav a {
   text-align: center;
@@ -79,6 +80,39 @@ body {
   background: rgb(0, 0, 0);
   color: #fcffff;
   text-align: center;
+}
+
+/*Page1*/
+.home-card--row2 {
+  grid-row: span 2;
+}
+.home-card--col2 {
+  grid-column: span 2;
+}
+.home-card--col1 {
+  grid-column: span 1;
+}
+.home-card--row1 {
+  grid-row: span 1;
+}
+.home-card--col3 {
+  grid-column: span 3;
+}
+.home-card {
+  position: relative;
+  padding: 15px;
+  background: #146C94;
+  border-radius: 35px;
+  box-shadow: var(--card-shadow-dlw);
+}
+.home-grid {
+  display: grid;
+  grid: auto-flow dense/repeat(auto-fit,minmax(9.375rem,1fr));
+  grid-auto-rows: minmax(3rem,auto);
+  grid-gap: 0.625rem;
+}
+#home-content {
+  margin-top: 1.6rem;
 }
 
 /*Page2*/
