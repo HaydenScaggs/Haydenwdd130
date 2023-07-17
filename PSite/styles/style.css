@@ -38,7 +38,7 @@ nav a:hover {
 /* BODY */
 .title-home {
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'PT Serif';
 }
 
 .home-picture {
@@ -76,7 +76,9 @@ nav a:hover {
 }
 
 body {
-  font-family: "Times New Roman", sans-serif;
+  margin: 20px;
+  padding: 35px;
+  font-family: "Times New Roman",'Roboto','Noto Sans CJK',system-ui,sans-serif,'PT Serif';
   background: rgb(0, 0, 0);
   color: #fcffff;
   text-align: center;
@@ -99,6 +101,7 @@ body {
   grid-column: span 3;
 }
 .home-card {
+  margin: 15px;
   position: relative;
   padding: 15px;
   background: #146C94;
@@ -125,9 +128,7 @@ body {
   margin: 0;
 }
 
-.citizen-table-wrapper {
-  overflow-x: auto;
-}
+
 
 .frame-data-recovery {
   background-color: #6aafd7;
@@ -183,7 +184,7 @@ body {
 
 .frame-data {
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'PT Serif';
 }
 
 .frame-picture {
@@ -222,6 +223,73 @@ body {
 }
 
 /*page3*/
+#picklist {
+  font-size: 0.875em;
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+}
+#ReasonsToPick-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ReasonsToPick-header {
+  
+  font-weight: bold;
+  text-align: center;
+}
+
+.home-card p {
+  margin-top: 0.2rem;
+}
+.home-card-title-large {
+  width: 100%;
+  margin-bottom: 10px;
+  color: var(--color-base--emphasized);
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+  border-bottom: 1px solid;
+  border-color: var(--border-color-base);
+}
+.infobox tr {
+  display: grid;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.infobox-header {
+  width: 100%;
+  border-top: 1px solid;
+  border-color: var(--border-color-base);
+  color: var(--color-base--emphasized);
+  font-size: 1em;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.home-card--row2 {
+  grid-row: span 2;
+}
+.home-card--col2 {
+  grid-column: span 2;
+}
+
+.home-card--row1 {
+  grid-row: span 1;
+}
+.home-card--col4 {
+  grid-column: span 4;
+}
+.infobox {
+  display: inline-block;
+  overflow: visible;
+  text-align: left;
+  line-height: 1.3em;
+}
+
 .home-grid--col3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
