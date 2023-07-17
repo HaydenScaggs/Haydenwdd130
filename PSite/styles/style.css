@@ -233,7 +233,6 @@ body {
   border-collapse: collapse;
 }
 .ReasonsToPick-header {
-  
   font-weight: bold;
   text-align: center;
 }
@@ -289,6 +288,7 @@ tbody {
   text-align: left;
   line-height: 1.3em;
 }
+
 
 .home-grid--col3 {
   grid-template-columns: 1fr 1fr 1fr;
